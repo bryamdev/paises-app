@@ -29,7 +29,7 @@ export class VerPaisComponent implements OnInit {
     this.activatedRoute.params
       .pipe(
         switchMap( (param) => this.paisService.buscarPaisPorCodigo( param['id']) ),
-        tap(console.log)
+        //tap(console.log)
       )
       .subscribe( resp =>{
 
